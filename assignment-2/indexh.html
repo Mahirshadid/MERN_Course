@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<header>
+    <title>FirstNodeJsWebsite</title>
+</header>
+<body style="background-color: black;">
+
+    <center><h2 style="width:50rem; font-family: cursive; background-color: aliceblue; color: black;" >Assalamu Alaikum!</h2>
+        <h3 style="width:50rem;font-family: sans-serif;  background-color: rgb(188, 224, 255); color: black;">I am Mahir Shadid<br>
+            Pursuiting CSE in International Islamic University Chittagong<br>
+            Doing a small job as Teaching Assistant in my own University<br>
+            I am the TA of Computer Networks Course<br>
+            I love teaching people<br>
+            And I am taking a course of MERN under Rabbil Bhai on OSTAD platform<br>
+            This is my First Node JS website about myself<br>
+        </h3>
+        <h4 style="width:50rem;font-family: sans-serif;   background-color: rgb(188, 224, 255); color: black;">Want to see something?<br>
+        Click below!</h4>
+        <button onclick="datef()" style="font-family: cursive;   background-color: rgb(144, 251, 167); 
+        color: black; border-color: aliceblue; padding: 0.5rem;">Click Click!</button>
+
+        <h4 style="width:50rem;font-family: sans-serif; background-color: rgb(144, 251, 167);" id="date"></h4>
+        <h4 style="width:50rem;font-family: cursive; background-color: rgb(247, 233, 199);">Any Advice for me? Please Write it down!</h4>
+        <input id="advice" type="text" style="background-color: white; border-color: burlywood;
+        padding: 2rem;">
+        <button onclick="submit()" style="font-family: cursive;   background-color: rgb(144, 251, 167); 
+        color: black; border-color: aliceblue; padding: 0.5rem;">Submit</button>
+        <h5  style="width:50rem;font-family: cursive; background-color: rgb(247, 233, 199);" id="padv"></h5>
+        <script>
+            function datef(){
+                var dt = Date()
+                document.getElementById("date").innerHTML=dt+
+                "<br>We'll be successful developers after 6 months from this time, InshaAllah!"
+            }
+            function submit(){
+                var adv = document.getElementById("advice").value
+                if(adv==""){
+                    var padv= document.getElementById("padv").innerHTML="Advice Panel Empty"
+                }else{
+                    var padv= document.getElementById("padv").innerHTML="Advice Received: "+adv
+                }
+            }
+        </script>
+    </center>
+
+</body>
+
+</html>

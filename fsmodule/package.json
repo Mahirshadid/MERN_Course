@@ -1,0 +1,13 @@
+{
+  "name": "fsmodule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node home_server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
